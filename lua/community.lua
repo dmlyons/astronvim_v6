@@ -21,7 +21,6 @@ return {
   { import = "astrocommunity.pack.markdown" },
   --  { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.proto" },
-  { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
 }

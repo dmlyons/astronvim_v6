@@ -6,4 +6,10 @@
 
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
-vim.cmd "highlight Normal ctermbg=black guibg=black"
+
+local function set_black_bg() vim.cmd "highlight Normal ctermbg=black guibg=black" end
+set_black_bg()
+vim.api.nvim_create_autocmd(
+  "ColorScheme",
+  { desc = "Keep Normal background black across colorscheme changes", callback = set_black_bg }
+)

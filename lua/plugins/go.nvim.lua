@@ -7,6 +7,7 @@ return {
   },
   config = function()
     require("go").setup {
+      lsp_cfg = false, -- AstroLSP/Mason owns gopls; avoid go.nvim's independent lspconfig.gopls.setup()
       lsp_inlay_hints = {
         enable = false,
         show_parameter_hints = false,
